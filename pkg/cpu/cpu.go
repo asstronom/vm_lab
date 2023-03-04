@@ -7,8 +7,10 @@ import (
 	"example.com/pkg/domain"
 )
 
+//структура, що симулює роботу процесора
 type CPU struct {
-	memory []int16
+	//
+	memory []int16 
 	reg    []int16
 }
 
