@@ -12,7 +12,8 @@ const (
 type Register int16
 
 const (
-	R1 Register = iota
+	R0 Register = iota
+	R1
 	R2
 	R3
 	R4
