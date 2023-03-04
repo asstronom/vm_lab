@@ -28,22 +28,22 @@ func TestLoad(t *testing.T) {
 	mem := []int16{10, 15, 20, 8}
 	cpu := NewCPU(mem)
 	cpu.load(instruction.LOAD{
-		DR:       domain.R1,
+		DR:       domain.R0,
 		PCOffset: 0,
 	}.Compile())
 
 	cpu.load(instruction.LOAD{
-		DR:       domain.R2,
+		DR:       domain.R1,
 		PCOffset: 1,
 	}.Compile())
 
 	cpu.load(instruction.LOAD{
-		DR:       domain.R3,
+		DR:       domain.R2,
 		PCOffset: 2,
 	}.Compile())
 
 	cpu.load(instruction.LOAD{
-		DR:       domain.R4,
+		DR:       domain.R3,
 		PCOffset: 3,
 	}.Compile())
 
